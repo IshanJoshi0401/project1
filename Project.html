@@ -1,117 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>CodeSynergy</title>
-<style>
-#main-container{
-  border: 1px solid black;
-    height: 600px;
-    width:450px;
-    margin: 100px auto;
-    background-color: black;
-    background-image: url(Carbon\ black.jpg);
-    background-size: cover;
-    box-shadow: 1px 3px 20px 6px #ddd;
+<html >
+  <head>
+    <meta charset="UTF- 8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CodeSynergy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+
+
+
+
+
+  <body>
+    <header>
+      <ul>
+          <li><b>CodeSynergy</b></li>
+          <li> <a href="">Home</a> </li>
+          <li> <a href="">News</a> </li>
+          <li><a href="">Profile </a></li>
+          <li><a href="">Chat </a></li>
+          <li><a href="">Feedback</a></li>
+      </ul>
+      
+      </header>
     
-  }
-  #inside-box{
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    
-  }
-  h1{
-    position: absolute;
-    right:1230px
-  
-  }
-  p{
-    position: absolute;
-    top:330px;
-    right: 1159px;
-  }
-  
-  header{
-
-padding: 30px;
-background-color: #242421;
-box-shadow: 0 0 5px black;
-
-}
-
-header li{
-display:contents;
-
-padding: 35px;
-
-}
-header li a{
-font-size: 30px;
-color: #f1f1f1;
-text-decoration: none;
-padding: 20px;
-
-
-}
-
-header li a:hover
-{
-color: rgb(149, 168, 226);
-}
-
-header ul li b{
-float: left;
-font-size: 60px;
-margin-top: -10px;
-color: #fff;
-padding: 1px;
-position: relative;
-left: -80px;
-
-}
-  
-
-</style>
-
-</head>
-<body style="background-color: black;" >
-  <header >
-    <ul>
-        <li><b>CodeSynergy</b></li>
-        <li> <a href="">Home</a> </li>
-        <li> <a href="">News</a> </li>
-        <li><a href="">Profile </a></li>
-        <li><a href="">Chat </a></li>
-        <li><a href="">Feedback</a></li>
-    </ul>
-    
-    </header>
-
-  <div id="main-container">
-    <p>
-     <h1 style="color: #ddd;font-size: 50px;">
-      Login
-     </h1>
-    </p>
-    <p style="color: #ddd;">
-    Please enter your login and password!
-    </p>
-
-
-
-
-
-
-
-  </div>
-  <div id="inside-box"> </div>
-  
-
-  
-  
-
-
-
-  
-</body>
+    <form>      
+      <p class="title">Login</p>      
+      <input type="text" placeholder="Username"  />
+      <input type="password" placeholder="Pasword"  />
+      <button>Login</button>
+      <p class="forgot">Don't have account <a href="#">Signup</a></p>
+    </form>
+  </body>  
 </html>
