@@ -13,8 +13,11 @@
     display: block;
     text-align: right;
 }
+#header input[type="button"]{
+    float: right;
+}
 #header nav{
-    padding-top: 50px;
+    padding-top: 10px;
 }
 #header h1,a{
     color: white;
@@ -22,39 +25,102 @@
     text-decoration: none;
 }
 #links li{
-    display: inline;
-    /* position: relative; */
+    display: inline; 
     padding: 50px;
     
 }
 #links li a{
-    color: white;
-    text-decoration: none;         
+    color: rgb(156, 156, 156);
+    text-decoration: none; 
+    font-size: 20px;
 }
-#container{
-    width: 100%;
-    margin: 4px auto;
-    text-align: center;
-    display: block;
+#links li a:hover{
+    color: white;        
+}
+#search-bar{
+    width: 85%;
+    float: right;
 }
 input[type="search"]{
-    width: 100%;
+    width: 85%;
     height: 50px;
-    margin: 25px 0 25px;
+    margin: 15px 0 25px;
     border: solid rgb(223, 220, 220) 2px;
     font-size: 16px;
+    border-radius: 30px;
 }
 input[type="search"]:hover{
     border:2px double #cccccc5e;
 }
-input[type="submit"]{
+input[type="button"]{
     background-color: #f6f6f6;
-    padding: 10px 15px 10px;
+    padding: 15px 15px 10px;
     border: white;
-    margin: 0 5px 20px;
-    display: inline;
+    margin: 0px;
+    width: 140px;
 }
-input[type="submit"]:hover{
+input[type="button"]:hover{
     cursor: pointer;
     border: #ccc solid 1px;
 }
+.sidebar{
+    width: 170px;
+    float: left;
+}
+.sidebar-links, .sidebar-button{
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.sidebar-links:hover, .sidebar-button:hover{
+    background-color: rgb(205, 204, 204)
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    float: right;
+    margin: 5px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+ .main-container{
+    border: 2px black solid;
+    border-radius: 20px;
+    display: block;
+    float: right;
+    overflow: hidden;
+    width: 1300px;
+    height:  170px;
+    margin: 20px;
+    transition:height 1s;
+    padding: 20px;
+    
+ }
+ 
+ .main-container:hover{
+    height: 250px;
+    border-color: #b1b1b1 ;    
+ }
+
+
+ .main-content
+{
+    overflow: hidden;
+    margin-left: 20px;
+}
+ 
+ 
+ .main-container img{
+    height: 130px;
+    width: 10%;
+    border-radius: 50%;
+    float: left;
+    border-color: #b1b1b1 ;    
+ }
+
+
+ 
