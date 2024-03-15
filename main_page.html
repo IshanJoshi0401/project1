@@ -3,30 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodeSynergy</title>
     <link href="main_page.css" rel="stylesheet" type="text/css">
-    <style>
-        
-    </style>
+    <link href="Exe.css" rel="stylesheet" type="text/CSS">
+    
 </head>
 <body>
     <header id="header">
         <a href="main_page.html"><h1>CodeSynergy</h1></a>
+        <input type="button" value="Log In">
         <nav>
             <ul id="links">
-                <li><a href="">Profile</a></li>
-                <li><a href="">Groups</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Posts</a></li>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="newz.html">News</a></li>
+                <li><a href="index.html">Feedback</a></li>
+                <!-- <li><a href="">Posts</a></li> -->
             </ul>
         </nav>
     </header>
-    <div id="container">
+    <div id="search-bar">
         <form>
-            <input type="search">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
+            <input type="search" onkeyup="myFunction()" placeholder="Search for names.." title="Type..">
+            <input type="button" value="Search">
         </form>
     </div>
+    <aside class="sidebar">
+
+      <a href="#" class="sidebar-links">Link 1</a>
+
+      <button class="sidebar-button" onclick="myAccFunc()">
+        Accordion<i class="arrow down"></i>
+      </button>
+
+      <div id="demoAcc" class="w3-hide w3-white w3-card">
+        <a href="#" class="sidebar-links">Link</a>
+        <a href="#" class="sidebar-links">Link</a>
+      </div>
+
+      <div>
+        <a href="#" class="sidebar-links">Link 2</a>
+        <a href="#" class="sidebar-links">Link 3</a>
+      </div>
+
+    </aside>
+
+    
+    
+    <div>
+      <div class="main-container">
+        <img class="content-img" src="ab6761610000e5eb3d658e8e012a61a3445ce15a.jpeg" alt="">
+        <div class="main-content">
+          <h2>Name of the person</h2>
+          <p>Some text about this person.</p>
+          <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laudantium aliquam doloremque inventore saepe placeat, nemo totam harum adipisci ex, pariatur quos consequatur voluptas. Quaerat dicta expedita placeat facere blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat sint expedita eius ducimus tempore possimus saepe officia quos. Aspernatur est itaque laudantium necessitatibus beatae optio sunt placeat. Ullam quod illo sunt quas atque fugiat non eius cupiditate veniam at. Molestiae iure accusantium quae eius non? Explicabo exercitationem modi perspiciatis voluptates ipsam incidunt, quia amet tempore reiciendis, sequi quas molestiae labore nisi quis. Tempora omnis, veritatis at exercitationem accusamus repellat dicta non alias sint tempore accusantium similique, nam voluptate! Labore esse nobis numquam voluptatem adipisci nesciunt quos facilis iure autem enim. Odio excepturi inventore corporis aliquid eos, libero expedita suscipit lorem200 </p>
+        </div>
+      </div>
+      <div>
+        <img class="content-img" src="ab6761610000e5eb3d658e8e012a61a3445ce15a.jpeg" alt="">
+        <div class="main-content">
+          <h2>Name of the person</h2>
+          <p>Some text about this person.</p>
+          <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laudantium aliquam doloremque inventore saepe placeat, nemo totam harum adipisci ex, pariatur quos consequatur voluptas. Quaerat dicta expedita placeat facere blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat sint expedita eius ducimus tempore possimus saepe officia quos. Aspernatur est itaque laudantium necessitatibus beatae optio sunt placeat. Ullam quod illo sunt quas atque fugiat non eius cupiditate veniam at. Molestiae iure accusantium quae eius non? Explicabo exercitationem modi perspiciatis voluptates ipsam incidunt, quia amet tempore reiciendis, sequi quas molestiae labore nisi quis. Tempora omnis, veritatis at exercitationem accusamus repellat dicta non alias sint tempore accusantium similique, nam voluptate! Labore esse nobis numquam voluptatem adipisci nesciunt quos facilis iure autem enim. Odio excepturi inventore corporis aliquid eos, libero expedita suscipit lorem200 </p>
+        </div>
+    </div>
+
+    <script src="main_page.js"></script>
+     
 </body>
 </html>
