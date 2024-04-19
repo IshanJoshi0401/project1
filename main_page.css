@@ -1,0 +1,352 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.body{
+    padding-top: 125px;
+    display: grid;
+    grid-template-columns: 170px auto;
+    height: 100vh;
+    overflow: hidden;
+}
+/* header{
+    z-index: 1;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header button{
+  margin-right: 60px;
+  height: 40px;
+}
+
+header .logo{
+    font-size: 30px;
+    padding: 40px;
+    font-weight: 900;
+}
+
+header .logo a{
+    color: #505050;
+    text-decoration: none;
+}
+
+header nav a{
+    color: #505050;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+    right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+header button{
+  margin-right: 60px;
+  height: 40px;
+} */
+
+aside
+{
+    background-color: #f1f1f1;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+}
+
+.idlogo
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: relative;
+    height: max-content;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  .sidebar:last-child a:hover:not(.active) {
+    background-color: none;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: auto;
+  }
+
+  #content
+  {
+    height: auto;
+    overflow: auto;
+  }
+  aside img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    border-color: #b1b1b1 ;    
+ }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #444;
+
+  position: absolute;
+  top: 100%;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#search-bar{
+    width: 100%;
+}
+input[type="search"]{
+    width: 85%;
+    height: 50px;
+    margin: 15px 0 25px 30px;
+    border: solid rgb(223, 220, 220) 2px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+input[type="search"]:hover{
+    border:2px double #cccccc5e;
+}
+input[type="button"]{
+    background-color: #f6f6f6;
+    padding: 15px 15px 10px;
+    border: white;
+    margin: 0px;
+    width: 140px;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    border: #ccc solid 1px;
+}
+.sidebar{
+    width: 170px;
+    float: left;
+}
+.sidebar-links, .sidebar-button{
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.sidebar-links:hover, .sidebar-button:hover{
+    background-color: rgb(205, 204, 204)
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    float: right;
+    margin: 5px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+ .main-container{
+    border: 2px black solid;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    width: 1600px;
+    height:  170px;
+    margin: 30px;
+    margin-right: 20px;
+    transition:height 1s ;
+    padding: 20px;
+    
+ }
+ 
+ .main-container:hover{
+    height: 250px;
+    border-color: #b1b1b1 ;    
+ }
+
+ header
+ {
+    position: fixed;
+ }
+
+
+ .main-content
+{
+    overflow: hidden;
+    margin-left: 20px;
+}
+ 
+.main-container img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    float: left;
+    border-color: #b1b1b1 ;    
+ }
+
+ /* For Mobile  */
+ @media (min-width: 320px) and (max-width: 480px) {
+    /* For tablets: */
+
+    .main-container{
+        border: 2px black solid;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        float: right;
+        width: auto;
+        height:  170px;
+        margin: 20px;
+        margin-right: 20px;
+        transition:height 1s ;
+        padding: 20px;
+        
+     }
+     #header{
+        /* padding: 20px;             */
+        background-color: rgba(0, 0, 0, 0.833);
+        height: 210px;
+        width: 100%;
+        /* position: relative; */
+        top: 0px;
+        display: inline-block;
+    }
+    #header a img{
+        height: 110px;
+        /* float: left; */
+        width: 100%;
+    }
+    #header nav{
+        padding-top: 0px;
+        display: inline;
+    }
+     header input[type="button"]{
+        width: 100px;
+     }
+     #header #links{
+        display: inline;
+        overflow-y: scroll;
+        width: 5px;
+     }
+    #links li{
+        box-sizing: border-box;
+        /* width: 130px; */
+        margin-left: -50px ;
+        padding: 35px;
+        padding-top: 10px;
+        display: inline;
+       
+        float: left;
+    }
+    #links li a{
+        color: rgb(156, 156, 156);
+        text-decoration: none; 
+        font-size: 20px;
+    }
+    #search-bar{
+    width: auto;
+    /* float: right; */
+}
+
+
+
+
+
+input[type="search"]{
+    width: 70%;
+    height: 50px;
+    margin: 0px;
+    border: solid rgb(223, 220, 220) 2px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+input[type="search"]:hover{
+    border:2px double #cccccc5e;
+}
+input[type="button"]{
+    background-color: #f6f6f6;
+    padding: 15px 15px 10px;
+    border: white;
+    margin: 0px;
+    width: 90px;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    border: #ccc solid 1px;
+}
+.sidebar{
+    width: 100%;
+}
+.sidebar-links, .sidebar-button{
+    text-align: center;
+  }
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px){
+    
+}
